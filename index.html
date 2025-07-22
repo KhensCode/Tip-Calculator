@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Tip Calculator</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h2>Tip Calculator</h2>
+
+    <label>Bill Amount</label>
+    <input type="number" id="bill" placeholder="e.g. 150" />
+
+    <label>Tip Percentage</label>
+    <input type="number" id="tip" placeholder="e.g. 10" />
+
+    <label>Currency</label>
+    <select id="currency">
+      <option value="R">R (Rand)</option>
+      <option value="$">$ (Dollar)</option>
+      <option value="€">€ (Euro)</option>
+      <option value="£">£ (Pound)</option>
+    </select>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
